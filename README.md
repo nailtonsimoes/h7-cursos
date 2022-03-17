@@ -7,7 +7,7 @@ Repositório criado para teste da vaga Fullstack da Verzel.
 Criação de uma plataforma CRUD de cursos on demand
 utilizando API com NodeJs e o Front-end em Angular 12 e dados persistidos em MongoDB.
 a API esta rodando na porta: localhost:8080 (usar o comando: yarn dev)
-o front esta rodando na porta: localhost:4200
+o front esta rodando na porta: localhost:4200 (usar o comando: npm run start)
 o BD esta rodando na porta: localhost:2727
 
 ###Funcionalidades implementadas:
