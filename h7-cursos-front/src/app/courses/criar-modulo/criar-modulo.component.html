@@ -1,0 +1,18 @@
+<div>
+  <p>ID</p>
+  <input type="text" [(ngModel)]="modulo.id" />
+  <p>Nome</p>
+  <input type="text" [(ngModel)]="modulo.nome" />
+</div>
+<br />
+<div class="button">
+  <button mat-raised-button (click)="adicionarModulo()">
+    Adicionar Modulo
+  </button>
+  <button mat-raised-button color="accent" (click)="atualizarModulo()">
+    Atualizar Modulo
+  </button>
+  <button mat-raised-button color="warn" (click)="deletarModulo()">
+    Deletar Modulo
+  </button>
+</div>
