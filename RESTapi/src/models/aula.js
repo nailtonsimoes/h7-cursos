@@ -4,7 +4,7 @@ const Aula = new mongoose.Schema(
   {
     id: {
       type: Number,
-      required: true
+      required: false
     },
     nome: {
       type: String,

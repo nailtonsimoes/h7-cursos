@@ -45,7 +45,7 @@ class moduloController {
   }
 
   editar(req, res) {
-    const modulo = Modulo.updateOne({ id: req.params.id }, req.body, err => {
+    const modulo = Modulo.updateOne({ _id: req.params.id }, req.body, err => {
       if (err)
         return res.status(400).json({
           error: true,
@@ -59,7 +59,7 @@ class moduloController {
   }
 
   deletar(req, res) {
-    const modulo = Modulo.deleteOne({ id: req.params.id }, err => {
+    const modulo = Modulo.deleteOne({ _id: req.params.id }, err => {
       if (err)
         return res.status(400).json({
           error: true,

@@ -22,7 +22,7 @@ export class ModulosComponent implements OnInit {
   constructor(private modulosService: ModulosService,
     public dialog: MatDialog ) {
     //this.modulosService = new ModulosService();
-    this. modulos$ = this.modulosService.list().pipe(
+    this.modulos$ = this.modulosService.list().pipe(
       catchError(error => {
         this.onError('Falha no carregamento de modulos')
         return of([])

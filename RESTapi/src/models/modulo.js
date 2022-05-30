@@ -3,8 +3,8 @@ const mongoose = require('mongoose')
 const Modulo = new mongoose.Schema(
   {
     id: {
-      type: Number,
-      required: true
+      type: String,
+      required: false
     },
     nome: {
       type: String,

@@ -1,5 +1,5 @@
 export class Modulo {
-  id!: number;
+  id!: string;
   nome!: string;
 
 }

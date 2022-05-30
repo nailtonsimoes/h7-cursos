@@ -9,7 +9,7 @@ import { first , delay } from 'rxjs';
 })
 export class ModulosService {
 
-  private readonly API = 'api/modulos';
+  private readonly API = 'http://localhost:8080/api/modulos';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -27,11 +27,11 @@ export class ModulosService {
     return this.httpClient.post<Modulo>(`${this.API}/adicionar`, modulo);
   }
 
-  atualizar (id: number, modulo: Modulo){
+  atualizar (id: string, modulo: Modulo){
     return this.httpClient.put<Modulo>(`${this.API}/editar/${id}`, modulo)
   }
 
-  deletar (id: number){
+  deletar (id: string){
     return this.httpClient.delete<Modulo>(`${this.API}/deletar/${id}`)
   }
 }

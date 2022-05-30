@@ -35,7 +35,7 @@ export class CriarModuloComponent implements OnInit {
   
   atualizarModulo (){
 
-    this.modulosService.atualizar(this.modulo.id,this.modulo ).subscribe(
+    this.modulosService.atualizar(this.modulo.id , this.modulo ).subscribe(
       (modulo: Modulo) =>{
         alert('Atualizado com sucesso!')
       }
