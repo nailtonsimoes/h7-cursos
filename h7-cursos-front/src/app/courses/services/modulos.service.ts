@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Modulo } from '../model/modulo';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http'  
 import { tap } from 'rxjs/internal/operators/tap';
 import { first , delay } from 'rxjs';
 
@@ -9,7 +9,7 @@ import { first , delay } from 'rxjs';
 })
 export class ModulosService {
 
-  private readonly API = 'http://localhost:8080/api/modulos';
+  private readonly API = 'api/modulos';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -18,13 +18,12 @@ export class ModulosService {
     .pipe(
       first(),
       delay(500),
-      tap(modulos => console.log(modulos) )
+      tap((modulos:Modulo[]) => console.log(modulos) )
     );
   }
 
-  Adicionar (modulo: Modulo){
-    
-    return this.httpClient.post<Modulo>(`${this.API}/adicionar`, modulo);
+  adicionar (modulo: Modulo){
+    return this.httpClient.post<Modulo>(`${this.API}/adicionar`, modulo).pipe(first());  //esse pipe first .pipe(first())
   }
 
   atualizar (id: string, modulo: Modulo){

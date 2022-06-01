@@ -9,6 +9,10 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 
 
 
@@ -24,7 +28,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatInputModule,
     MatIconModule,
     MatRadioModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatSnackBarModule
   ]
 })
 export class AppMaterialModule { }

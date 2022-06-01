@@ -1,18 +1,18 @@
-<div>
-  <p>ID</p>
-  <input type="text" [(ngModel)]="modulo.id" />
-  <p>Nome</p>
-  <input type="text" [(ngModel)]="modulo.nome" />
-</div>
-<br />
-<div class="button">
-  <button mat-raised-button (click)="adicionarModulo()">
-    Adicionar Modulo
-  </button>
-  <button mat-raised-button color="accent" (click)="atualizarModulo()">
-    Atualizar Modulo
-  </button>
-  <button mat-raised-button color="warn" (click)="deletarModulo()">
-    Deletar Modulo
-  </button>
-</div>
+<mat-card>
+  <mat-toolbar>Adicionar Novo Curso</mat-toolbar>
+
+  <mat-card-content>
+    <form [formGroup]="form" class="min-width">
+      <mat-form-field class="full-width">
+        <input matInput placeholder="Nome" formControlName="nome" />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()">
+      Salvar
+    </button>
+    <button mat-raised-button (click)="onCancel()">Cancelar</button>
+  </mat-card-actions>
+</mat-card>
