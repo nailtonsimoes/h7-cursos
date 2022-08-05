@@ -7,7 +7,7 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { SharedModule } from '../shared/shared.module';
 import { CriarModuloComponent } from './criar-modulo/criar-modulo.component';
 import { LoginComponent } from './login/login.component';
-import { FormsModule ,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule } from '@angular/forms'; //é necessario importar o reactiveforms para o modulo do componente assim o forms funciona
 
 
 @NgModule({

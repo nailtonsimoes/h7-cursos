@@ -18,7 +18,7 @@ export class CriarModuloComponent implements OnInit {
   form: FormGroup;
 
   modulo: Modulo = new Modulo;
- // form!: FormGroup;
+
 
   constructor(private formBuilder: FormBuilder,
     private modulosService: ModulosService,
@@ -31,9 +31,6 @@ export class CriarModuloComponent implements OnInit {
     }
 
   ngOnInit(): void {
-   /*  this.form = this.fb.group({
-      nome: ['']
-      }); */
   }
   
   //metodo que liga o botão salvar ao serviço de criar curso

@@ -5,7 +5,7 @@ const Modulo = mongoose.model('modulo')
 
 class moduloController {
   adicionar(req, res) {
-    const modulo = Modulo.create(req.body, err => {
+    Modulo.create(req.body, err => {
       if (err)
         return res.status(400).json({
           error: true,
