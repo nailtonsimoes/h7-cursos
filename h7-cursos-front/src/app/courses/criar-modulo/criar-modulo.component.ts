@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModulosService } from '../services/modulos.service';
 import { Modulo } from '../model/modulo';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 import { Location } from '@angular/common';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -15,12 +15,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class CriarModuloComponent implements OnInit {
 
-  form: FormGroup;
+  form: UntypedFormGroup;
 
   modulo: Modulo = new Modulo;
 
 
-  constructor(private formBuilder: FormBuilder,
+  constructor(private formBuilder: UntypedFormBuilder,
     private modulosService: ModulosService,
     private _snackBar: MatSnackBar,
     private location: Location
