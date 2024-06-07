@@ -17,8 +17,8 @@ Edição de Modulo;
 Deleção de Modulo;
 
 #Recursos utilizados:
-NodeJS;
-Angular 12;
+NodeJS 16.14.0;
+Angular 14;
 Angular Material;
 Yarn (gerenciador de pacotes);
 Insomnia (para testes);
